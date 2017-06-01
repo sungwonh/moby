@@ -64,7 +64,8 @@ type UpdateStatus struct {
 
 // ReplicatedService is a kind of ServiceMode.
 type ReplicatedService struct {
-	Replicas *uint64 `json:",omitempty"`
+	Replicas 	*uint64 	`json:",omitempty"`
+	TaskRemove	[]string 	`json:",omitempty"`
 }
 
 // GlobalService is a kind of ServiceMode.
